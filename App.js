@@ -6,6 +6,8 @@ import 'react-native-gesture-handler';
 import Signup from './src/screens/Signup/Index';
 import Signin from './src/screens/Signin/Index';
 import Home from './src/screens/Home/Index';
+import ForgetPassword from './src/screens/ForgetPassword/Index';
+import ConfirmEmail from './src/screens/ConfirmReset/Index';
 
 const Stack = createStackNavigator();
 
@@ -23,6 +25,8 @@ function MyStack() {
         <Stack.Navigator screenOptions={{headerShown: false}}>
           <Stack.Screen name="Signin" component={Signin} />
           <Stack.Screen name="Signup" component={Signup} />
+          <Stack.Screen name="ForegetPassword" component={ForgetPassword} />
+          <Stack.Screen name="ConfirmEmail" component={ConfirmEmail} />
           <Stack.Screen name="Home" component={Home} />
         </Stack.Navigator>
     ) 

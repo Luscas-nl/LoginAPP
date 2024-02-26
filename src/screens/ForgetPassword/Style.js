@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        marginTop: 17
+        marginTop: 25
     },
 
     textButton:{
@@ -79,6 +79,7 @@ const styles = StyleSheet.create({
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        marginTop: "20px"
     },
 
     iconInputInner:{
@@ -115,11 +116,20 @@ const styles = StyleSheet.create({
         marginVertical: 35
     },
 
-    txt_forget:{
+    signupLabel:{
         color: "white",
+        fontWeight: 700,
+        fontSize: "2em",
+    },
+
+    signupDesc:{
+        color: "white",
+        fontWeight: 600,
+        fontSize: "1em",
         width: "92%",
-        textDecorationLine: "underline"
-    }
+        marginVertical: "30px",
+        textAlign: "center"
+    },
 })
 
 export default styles

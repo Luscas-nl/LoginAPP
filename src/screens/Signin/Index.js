@@ -85,6 +85,7 @@ export default function Signin({navigation}) {
                         <TextInput style={styles.inputLogin} placeholder='digite sua senha'  onChangeText={text => setPass(text)} value={pass}></TextInput>
                     </View>
                 </View>
+                <Text style={styles.txt_forget} onPress={() => navigation.navigate("ForegetPassword")}>Esqueceu a senha?</Text>
 
                 <TouchableOpacity style={styles.buttonEnter} disabled={!buttonEnabled} onPress={() => signInEmail(email, pass) }>
                     <Text style={styles.textButton}>
